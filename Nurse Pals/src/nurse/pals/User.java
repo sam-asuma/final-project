@@ -1,11 +1,10 @@
 package nurse.pals;
 
 public class User {
-	
-	
 	private long id;
 	private String username;
 	private String password;
+	private String access;
 	
 	public long getId() {
 		return id;
@@ -25,9 +24,10 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public void setAccess() {
-		
+	public String getAccess() {
+		return access;
 	}
-	
-
+	public void setAccess(String access) {
+		this.access = access;
+	}
 }
