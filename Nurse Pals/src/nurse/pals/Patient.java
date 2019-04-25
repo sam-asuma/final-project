@@ -16,9 +16,6 @@ public class Patient {
 	private String pharmacy;
 	private String emergencyContact;
 	
-	
-	
-	
 	public long getId() {
 		return id;
 	}
@@ -46,14 +43,14 @@ public class Patient {
 	public int getSSN() {
 		return SSN;
 	}
-	public void setSSN(int sSN) {
-		SSN = sSN;
+	public void setSSN(int SSN) {
+		this.SSN = SSN;
 	}
 	public int getDOB() {
 		return DOB;
 	}
-	public void setDOB(int dOB) {
-		DOB = dOB;
+	public void setDOB(int DOB) {
+		this.DOB = DOB;
 	}
 	public double getHeight() {
 		return height;
@@ -98,9 +95,4 @@ public class Patient {
 	public void setEmergencyContact(String emergencyContact) {
 		this.emergencyContact = emergencyContact;
 	}
-	
-	
-	
-	
-
 }

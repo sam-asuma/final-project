@@ -12,7 +12,6 @@ public class Nurse extends User {
 
 	public Nurse() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getFirstName() {
@@ -28,7 +27,7 @@ public class Nurse extends User {
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.LastName = lastName;
 	}
 
 	public String[] getEducation() {
@@ -55,13 +54,20 @@ public class Nurse extends User {
 		this.license = license;
 	}
 	
-
-
-
-
-
-
-
-
-
+	public String getLevel()
+	{
+		return level;
+	}
+	
+	public void setLevel(String level)
+	{
+		this.level = level;
+	}
+	
+	public String toString()
+	{
+		return new String("First Name: ") + new String("Last Name: ") +
+		new String("Education: ") + new String("Certification: ") +
+		new String("License: ") + new String("Level: ") + super.toString();
+	}
 }
